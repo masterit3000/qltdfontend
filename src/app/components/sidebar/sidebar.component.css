@@ -1,0 +1,16 @@
+.menuleft li:hover .submenu{
+    display: block;
+    max-height: 300px;
+}
+
+.menuleft li.active .submenu{
+  display: block;
+  max-height: 300px;
+}
+
+
+  .submenu {
+    overflow: hidden;
+    max-height: 0;
+    -webkit-transition: all 0.5s ease-out;
+  }
