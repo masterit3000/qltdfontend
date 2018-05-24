@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
@@ -11,6 +11,7 @@ import { IconsComponent } from './icons/icons.component';
 import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
+import { DanhsachKhComponent } from './danhsach-kh/danhsach-kh.component';
 
 const routes: Routes =[
     { path: 'dashboard',      component: DashboardComponent },
@@ -21,6 +22,7 @@ const routes: Routes =[
     { path: 'maps',           component: MapsComponent },
     { path: 'notifications',  component: NotificationsComponent },
     { path: 'upgrade',        component: UpgradeComponent },
+    { path: 'danhsach-kh',    component: DanhsachKhComponent},
     { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 
