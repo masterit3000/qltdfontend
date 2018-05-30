@@ -1,3 +1,145 @@
-<p>
-  cam-do works!
-</p>
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-plain">
+                    <div class="card-header">
+                        <h4 class="card-title mt-0"><font color="black">Hợp đồng cầm đồ</font></h4>
+                        <div class="form-group">
+                          <div class="row">
+                              <div class="col-md-1">
+                                  <label class="control-label">Mã HĐ</label>
+                                  <input type="text" id="txtMaHD" name="searchMaHD" class="form-control">
+                              </div>
+                              <div class="col-md-2">
+                                  <label class="control-label">Tên khách hàng</label>
+                                  <input type="text" id="txtTenKH" name="searchTenKH" class="form-control">
+                              </div>
+                              <div class="col-md-1">
+                                  <label class="control-label">Ngày vay</label>
+                                  <input type="date" id="dateNgayVay" name="searchNgayVay" class="form-control">
+                              </div>
+                              <div class="col-md-2">
+                                  <label class="control-label">Loại tài sản</label>
+                                  <br />
+                                  <select id="taiSanCategory" class="custom-select">
+                                      <option label="Tất cả" title="Tất cả" value="0">Tất cả</option>
+                                      <option label="Ô tô" title="Ô tô" value="1">Ô tô</option>
+                                      <option label="Xe máy" title="Xe máy" value="2">Xe máy</option>
+                                      <option label="Điện thoại" title="Điện thoại" value="3">Điện thoại</option>
+                                  </select>
+                              </div>
+                              <div class="col-md-2">
+                                  <label class="control-label">Trạng thái</label>
+                                  <select id="trangThaiCategory" class="custom-select">
+                                      <option label="Tất cả hợp đồng đang vay" title="Tất cả hợp đồng đang vay" value="10">Tất cả</option>
+                                      <option label="Chậm lãi" title="Chậm lãi" value="11">Chậm lãi</option>
+                                      <option label="Trễ hạn" title="Trễ hạn" value="12">Trễ hạn</option>
+                                      <option label="Chờ thanh lý" title="Chờ thanh lý" value="13">Chờ thanh lý</option>
+                                      <option label="Đã thanh lý" title="Đã thanh lý" value="14">Đã thanh lý</option>
+                                      <option label="Đã chuộc" title="Đã chuộc" value="15">Đã chuộc</option>
+                                      <option label="Đã xóa" title="Đã xóa" value="16">Đã xóa</option>
+                                  </select>
+                              </div>
+                              <div class="col-md-2">
+                                  <button class="btn btn-info btnSearch" height="100%" onclick="searchDemo();">Tìm kiếm</button>
+                              </div>
+                          </div> 
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead class="">
+                                    <th>
+                                        #
+                                    </th>
+                                    <th>
+                                        Mã HĐ
+                                    </th>
+                                    <th>
+                                        Tên KH
+                                    </th>
+                                    <th>
+                                        Mã TS
+                                    </th>
+                                    <th>
+                                        Tài sản
+                                    </th>
+                                    <th>
+                                        VNĐ
+                                    </th>
+                                    <th>
+                                        Ngày cầm
+                                    </th>
+                                    <th>
+                                        Lãi đã đóng
+                                    </th>
+                                    <th>
+                                        Nợ cũ
+                                    </th>
+                                    <th>
+                                        Lãi đến hôm nay
+                                    </th>
+                                    <th>
+                                        Tình trạng
+                                    </th>
+                                    <th>
+                                        Ngày phải đóng lãi
+                                    </th>
+                                    <th width="100px">
+                                        &nbsp;
+                                    </th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            Dakota Rice
+                                        </td>
+                                        <td>
+                                            Niger
+                                        </td>
+                                        <td>
+                                            Oud-Turnhout
+                                        </td>
+                                        <td>
+                                            $36,738
+                                        </td>
+                                        <td>
+                                            $36,738
+                                        </td>
+                                        <td>
+                                            $36,738
+                                        </td>
+                                        <td>
+                                            $36,738
+                                        </td>
+                                        <td>
+                                            $36,738
+                                        </td>
+                                        <td>
+                                            $36,738
+                                        </td>
+                                        <td>
+                                            $36,738
+                                        </td>
+                                        <td>
+                                            $36,738
+                                        </td>
+                                        <td>
+                                            $36,738
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  
