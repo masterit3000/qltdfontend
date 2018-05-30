@@ -12,6 +12,7 @@ import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { CamDoComponent } from './cam-do/cam-do.component';
+import { CamDoNewComponent } from './cam-do/cam-do-new/cam-do-new.component';
 import { VaylaiComponent } from './vaylai/vaylai.component';
 import { BatHoComponent } from './bat-ho/bat-ho.component';
 import { DanhSachKhachHangComponent } from './danh-sach-khach-hang/danh-sach-khach-hang.component';
@@ -41,6 +42,7 @@ import { BaoCaoHopDongDaXoaComponent } from './bao-cao-hop-dong-da-xoa/bao-cao-h
 import { BaoCaoTinNhanComponent } from './bao-cao-tin-nhan/bao-cao-tin-nhan.component';
 import { BanGiaoCaComponent } from './ban-giao-ca/ban-giao-ca.component';
 import { DongTienTheoNgayComponent } from './dong-tien-theo-ngay/dong-tien-theo-ngay.component';
+import { CamDoChucNangComponent } from './cam-do/cam-do-chuc-nang/cam-do-chuc-nang.component';
 
 
 const routes: Routes =[
@@ -54,6 +56,8 @@ const routes: Routes =[
     { path: 'upgrade',        component: UpgradeComponent },
     // tới trang cầm đồ
     { path: 'camdo',          component: CamDoComponent },
+    { path: 'camdoNew',       component: CamDoNewComponent },
+    { path: 'camdoChucNang',  component: CamDoChucNangComponent },
     // tới trang vay lãi
     { path: 'vaylai',          component: VaylaiComponent },
     // tới trang bát họ
