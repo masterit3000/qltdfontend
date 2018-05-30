@@ -1,53 +1,61 @@
 
 <div class="main-content">
-    <div class="container-fluid">
+    <div class="container">
         <!-- title -->
         
-        <div class="row">
-            <div class="col-md-8">
-            <h3>Danh sách khách hàng</h3>
-            </div>
-            <div class="col-md-4">
-            <form class="form-inline" role="form">
+        
+         <div class="page-header">
+             <div class="row">
+                <div class="col-md-8">
+                     <h3>            
+                        Danh sách khách hàng</h3>
+                 </div>
                 
-                <button class="btn btn-primary">Thêm khách hàng</button>
-                
-                    <div style="text-align: center;">
-                    <b>TỔNG SỐ</b><br/>
-                    <b>2</b> 
-                    </div>
-                
-            </form>   
+                        <!-- Page Stats -->
+                <ul class="page-stats">
+                    <li>
+                        <button class="btn btn-primary" id="btn-create-staff" data-toggle="modal" href="#div-create-staff">
+                                Thêm khách hàng</button>
+                     </li>
+                    <li>
+                        <div class="summary" style="text-align:center;">
+                            <span style="font-size: 14px;">Tổng số</span>
+                            <h3 id="h3-total-account">2</h3>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
+    
+       
         <!--  -->
         <div class="form-vertical">
         <div class="form-group">
             <!-- search -->
             <div class="row">
-            <div class="col-md-3">
-                <input type="text"  name="keysearch" class="form-control" placeholder="Tên khách hàng ...">
-            </div>
-            <div class="col-md-3">
-                <select class="custom-select mr-sm-2" >                 
-                    <option selected>abc12</option>                  
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    </select>
-                    
-            </div>
-            <div class="col-md-3">
-                <select class="custom-select mr-sm-2" >
-                    <option selected>Tất cả</option>
-                    <option value="1">Bình thường</option>
-                    <option value="2">Khóa</option>                  
-                    </select>
+                <div class="col-md-3">
+                    <input type="text"  name="keysearch" class="form-control" placeholder="Tên khách hàng ...">
+                </div>
+                <div class="col-md-3">
+                    <select class="custom-select mr-sm-2" >                 
+                        <option selected>abc12</option>                  
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        </select>
+                        
+                </div>
+                <div class="col-md-3">
+                    <select class="custom-select mr-sm-2" >
+                        <option selected>Tất cả</option>
+                        <option value="1">Bình thường</option>
+                        <option value="2">Khóa</option>                  
+                        </select>
 
-            </div>
-            <div class="col-md-1">
-                <button class="btn btn-info " style="margin-top: 0px" >Tìm</button>
-            </div>
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-info " style="margin-top: 0px" >Tìm</button>
+                </div>
             </div>
         </div>
             <!-- kết quả  -->
