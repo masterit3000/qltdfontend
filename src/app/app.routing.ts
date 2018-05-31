@@ -14,7 +14,9 @@ import { UpgradeComponent } from './upgrade/upgrade.component';
 import { CamDoComponent } from './cam-do/cam-do.component';
 import { CamDoNewComponent } from './cam-do/cam-do-new/cam-do-new.component';
 import { VaylaiComponent } from './vaylai/vaylai.component';
+import { VaylaiNewComponent } from './vaylai/vaylai-new/vaylai-new.component';
 import { BatHoComponent } from './bat-ho/bat-ho.component';
+import { BatHoNewComponent } from './bat-ho/bat-ho-new/bat-ho-new.component';
 import { DanhSachKhachHangComponent } from './danh-sach-khach-hang/danh-sach-khach-hang.component';
 import { KhachCanVayComponent } from './khach-can-vay/khach-can-vay.component';
 import { CheckThongTinKhachHangComponent } from './check-thong-tin-khach-hang/check-thong-tin-khach-hang.component';
@@ -60,8 +62,10 @@ const routes: Routes =[
     { path: 'camdoChucNang',  component: CamDoChucNangComponent },
     // tới trang vay lãi
     { path: 'vaylai',          component: VaylaiComponent },
+    { path: 'vaylaiNew',       component: VaylaiNewComponent },
     // tới trang bát họ
     { path: 'batHo',          component: BatHoComponent },
+    { path: 'batHoNew',       component: BatHoNewComponent },
     // menu khách hàng
     { path: 'danhSachKhachHang',          component: DanhSachKhachHangComponent },
     { path: 'khachCanVay',          component: KhachCanVayComponent },

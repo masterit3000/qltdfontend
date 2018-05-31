@@ -2,20 +2,20 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <h3>Hợp đồng cầm đồ</h3>
+                <h3>Hợp đồng vay tiền</h3>
                 <div class="card">
                     <div class="card-body">
                         <form>
                             <div class="row">
                                 <div class="col-md-4" align="center">
                                     <label class="radio-inline">
-                                        <input type="radio" name="hopDongNew" id="camDoNew" value="1" checked="checked">
+                                        <input type="radio" name="hopDongNew" id="vayLaiNew" value="1" checked="checked">
                                         Khách hàng mới
                                     </label>
                                 </div>
                                 <div class="col-md-4" align="center">
                                     <label class="radio-inline">
-                                        <input type="radio" name="hopDongNew" id="camDoOld" value="2">
+                                        <input type="radio" name="hopDongNew" id="vayLaiOld" value="2">
                                         Khách hàng đã có trong hệ thống
                                     </label>
                                 </div>
@@ -52,8 +52,8 @@
                                         </mat-form-field>
                                 </div>
                                 <div class="col-md-5">
-                                  <mat-form-field class="example-full-width">
-                                      <br />
+                                  <br />
+                                  <mat-form-field class="example-full-width">   
                                     <input matInput placeholder="Nơi cấp" type="text">
                                   </mat-form-field>
                                 </div>
@@ -66,40 +66,37 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-7">
+                                <div class="col-md-12">
+                                  <label>Tài sản thế chấp</label>
                                   <mat-form-field class="example-full-width">
-                                        <label class="control-label">Loại tài sản</label>
-                                        <select class="custom-select mr-sm-2" >
-                                            <option selected>Xe máy</option>
-                                            <option value="21">Ô tô</option>
-                                            <option value="22">Điện thoại</option>                  
-                                            <option value="23">Laptop</option>                  
-                                            <option value="24">Vàng</option>                                  
-                                        </select>
-                                  </mat-form-field>
-                                </div>
-                                <div class="col-md-5">
-                                  <mat-form-field class="example-full-width">
-                                    <input matInput placeholder="Tên tài sản" type="text">
-                                  </mat-form-field>
-                                  <mat-form-field class="example-full-width">
-                                    <input matInput placeholder="Số tiền cầm" type="number">
-                                  </mat-form-field>
+                                     <textarea matInput></textarea>
+                                   </mat-form-field>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
                                   <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Tổng số tiền vay" type="number">
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                  <mat-form-field class="example-full-width">
                                         <label class="control-label">Hình thức lãi</label>
                                         <select class="custom-select mr-sm-2" >
                                             <option selected>Lãi ngày</option>
-                                            <option value="31">Lãi tháng (%) (30 ngày)</option>
-                                            <option value="32">Lãi tuần (%)</option>                  
-                                            <option value="33">Lãi tuần (k)</option>                                                
+                                            <option value="21">Lãi tháng (%) (30 ngày)</option>
+                                            <option value="22">Lãi tháng (%) (Định kỳ)</option>                  
+                                            <option value="23">Lãi tuần (%)</option>                  
+                                            <option value="24">Lãi tuần (k)</option>                                  
                                         </select>
                                   </mat-form-field>
+                                </div>
+                                <div class="col-md-5">
+                                  <br /><br />
                                   <label class="control-label">Thu lãi trước</label>
-                                  <input type="checkbox" name="thuLaiTruoc" value="1">
+                                  <input type="checkbox" name="thuHoTruoc" value="1">
                                 </div>
                             </div>
                             <div class="row">
@@ -121,18 +118,28 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                    <mat-form-field class="example-full-width">
-                                        <label class="control-label">Kỳ lãi</label>
-                                        <input matInput type="number" placeholder="VD: 10 ngày đóng lãi 1 lần thì điền số 10">
-                                    </mat-form-field>
+                                  <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Số ngày vay" type="number">
+                                  </mat-form-field>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-7">
+                                  <mat-form-field class="example-full-width">
+                                        <input matInput placeholder="Kỳ lãi" type="number">
+                                  </mat-form-field>
+                                </div>
+                                <div class="col-md-5">
+                                  <br />  
+                                  <p>(VD: 3 ngày đóng lãi 1 lần thì điền số 3)</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-12">
-                                        <mat-form-field class="example-full-width">
-                                            <label class="control-label">Ngày vay</label>
-                                            <input matInput type="date">
-                                        </mat-form-field>
+                                  <mat-form-field class="example-full-width">
+                                        <label class="control-label">Ngày vay</label>
+                                        <input matInput type="date">
+                                  </mat-form-field>
                                 </div>
                             </div>
                             <div class="row">
@@ -148,23 +155,6 @@
                                             <textarea class="form-control" rows="5"></textarea>
                                         </div>
                                     </div> -->
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12" align="center">
-                                    <h4>Thông tin tài sản</h4>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <mat-form-field class="example-full-width">
-                                        <input matInput type="text" placeholder="Thông tin 1">
-                                    </mat-form-field>
-                                </div>
-                                <div class="col-md-6">
-                                    <mat-form-field class="example-full-width">
-                                        <input matInput type="text" placeholder="Thông tin 2">
-                                    </mat-form-field>
                                 </div>
                             </div>
                             <button mat-raised-button type="submit" class="btn btn-success pull-right">Thêm mới</button>
