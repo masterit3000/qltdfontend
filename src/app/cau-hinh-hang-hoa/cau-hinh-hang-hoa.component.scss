@@ -1,0 +1,46 @@
+.main-content{
+    background: #fff;
+}
+
+.form-vertical .form-group:first-child {
+    padding-top: 5px;
+}
+.form-vertical .form-group {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+a:hover {
+    color: #4d7496;
+}
+.form-vertical .form-group .control-label {
+    padding-bottom: 5px;
+    white-space: nowrap;
+}
+label {
+    font-weight: 600;
+}
+label, input, button, select, textarea {
+    font-size: 13px !important;
+}
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.row:after {
+    clear: both;
+}
+.row:before, .row:after {
+    display: table;
+    content: " ";
+}
+
+.row
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
