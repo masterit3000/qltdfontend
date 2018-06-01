@@ -41,6 +41,8 @@ import { BaoCaoHopDongDaXoaComponent } from './bao-cao-hop-dong-da-xoa/bao-cao-h
 import { BaoCaoTinNhanComponent } from './bao-cao-tin-nhan/bao-cao-tin-nhan.component';
 import { BanGiaoCaComponent } from './ban-giao-ca/ban-giao-ca.component';
 import { DongTienTheoNgayComponent } from './dong-tien-theo-ngay/dong-tien-theo-ngay.component';
+import { ThemKhachHangComponent } from './them-khach-hang/them-khach-hang.component';
+import { SuaThongTinKhachHangComponent } from './sua-thong-tin-khach-hang/sua-thong-tin-khach-hang.component';
 
 
 const routes: Routes =[
@@ -93,6 +95,10 @@ const routes: Routes =[
     { path: 'baoCaoTinNhan',          component:BaoCaoTinNhanComponent},
     { path: 'banGiaoCa',          component:BanGiaoCaComponent},
     { path: 'dongTienTheoNgay',          component:DongTienTheoNgayComponent},
+    // danh sách khách hàng
+    { path: 'themKhachHang',          component:ThemKhachHangComponent},
+    { path: 'suaThongTinKhachHang',          component:SuaThongTinKhachHangComponent},
+   
     { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 

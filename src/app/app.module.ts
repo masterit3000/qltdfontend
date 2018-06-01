@@ -57,6 +57,8 @@ import { BaoCaoHopDongDaXoaComponent } from './bao-cao-hop-dong-da-xoa/bao-cao-h
 import { BaoCaoTinNhanComponent } from './bao-cao-tin-nhan/bao-cao-tin-nhan.component';
 import { BanGiaoCaComponent } from './ban-giao-ca/ban-giao-ca.component';
 import { DongTienTheoNgayComponent } from './dong-tien-theo-ngay/dong-tien-theo-ngay.component';
+import { ThemKhachHangComponent } from './them-khach-hang/them-khach-hang.component';
+import { SuaThongTinKhachHangComponent } from './sua-thong-tin-khach-hang/sua-thong-tin-khach-hang.component';
 
 
 @NgModule({
@@ -115,6 +117,8 @@ import { DongTienTheoNgayComponent } from './dong-tien-theo-ngay/dong-tien-theo-
     BaoCaoTinNhanComponent,
     BanGiaoCaComponent,
     DongTienTheoNgayComponent,
+    ThemKhachHangComponent,
+    SuaThongTinKhachHangComponent,
     
 
   ],
