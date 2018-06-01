@@ -61,6 +61,7 @@ import { DongTienTheoNgayComponent } from './dong-tien-theo-ngay/dong-tien-theo-
 import { CamDoChucNangComponent } from './cam-do/cam-do-chuc-nang/cam-do-chuc-nang.component';
 import { BatHoNewComponent } from './bat-ho/bat-ho-new/bat-ho-new.component';
 import { VaylaiNewComponent } from './vaylai/vaylai-new/vaylai-new.component';
+import { BatHoChucNangComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-chuc-nang.component';
 
 
 @NgModule({
@@ -123,6 +124,7 @@ import { VaylaiNewComponent } from './vaylai/vaylai-new/vaylai-new.component';
     CamDoChucNangComponent,
     BatHoNewComponent,
     VaylaiNewComponent,
+    BatHoChucNangComponent,
     
 
   ],

@@ -45,6 +45,7 @@ import { BaoCaoTinNhanComponent } from './bao-cao-tin-nhan/bao-cao-tin-nhan.comp
 import { BanGiaoCaComponent } from './ban-giao-ca/ban-giao-ca.component';
 import { DongTienTheoNgayComponent } from './dong-tien-theo-ngay/dong-tien-theo-ngay.component';
 import { CamDoChucNangComponent } from './cam-do/cam-do-chuc-nang/cam-do-chuc-nang.component';
+import { BatHoChucNangComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-chuc-nang.component';
 
 
 const routes: Routes =[
@@ -66,6 +67,8 @@ const routes: Routes =[
     // tới trang bát họ
     { path: 'batHo',          component: BatHoComponent },
     { path: 'batHoNew',       component: BatHoNewComponent },
+    { path: 'batHoChucNang',  component: BatHoChucNangComponent },
+
     // menu khách hàng
     { path: 'danhSachKhachHang',          component: DanhSachKhachHangComponent },
     { path: 'khachCanVay',          component: KhachCanVayComponent },
