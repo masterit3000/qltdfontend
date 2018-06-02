@@ -14,8 +14,7 @@
                         <!-- Page Stats -->
                 <ul class="page-stats">
                     <li>
-                        <button class="btn btn-primary" id="btn-create-staff" data-toggle="modal" href="#div-create-staff">
-                                Thêm cửa hàng</button>
+                        <a routerLinkActive="active" [routerLink]="['/themCuaHang']" class="btn btn-primary" >Thêm Cửa Hàng</a>
                      </li>
                     <li>
                         <div class="summary" style="text-align:center;">
@@ -82,7 +81,7 @@
                             1
                         </td>
                         <td id="td-name">
-                            <a data-toggle="modal" onclick="update_shop(24431)" href="#div-create-shop">abc12</a>
+                                <a routerLinkActive="active" [routerLink]="['/suaThongTinCuaHang']" >abc12</a>
                         </td>
                         <td id="td-address">
                             số 90 đường trên trời
