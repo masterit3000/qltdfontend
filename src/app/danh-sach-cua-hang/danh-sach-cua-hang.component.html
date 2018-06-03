@@ -1,0 +1,150 @@
+
+<div class="main-content">
+    <div class="container">
+        <!-- title -->
+        
+        
+         <div class="page-header">
+             <div class="row">
+                <div class="col-md-8">
+                     <h3>            
+                        Danh sách cửa hàng</h3>
+                 </div>
+                
+                        <!-- Page Stats -->
+                <ul class="page-stats">
+                    <li>
+                        <a routerLinkActive="active" [routerLink]="['/themCuaHang']" class="btn btn-primary" >Thêm Cửa Hàng</a>
+                     </li>
+                    <li>
+                        <div class="summary" style="text-align:center;">
+                            <span style="font-size: 14px;">Tổng số</span>
+                            <h3 id="h3-total-account">1</h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    
+       
+        <!--  -->
+        <div class="form-vertical">
+        <div class="form-group">
+            <!-- search -->
+            <div class="row">
+                <div class="col-md-3">
+                    <input type="text"  name="keysearch" class="form-control" placeholder="Tên cửa hàng ...">
+                </div>
+                
+                <div class="col-md-3">
+                    <select class="custom-select mr-sm-2" >
+                        <option selected>Tất cả</option>
+                        <option value="1">Hoạt động</option>
+                        <option value="2">Tạm ngưng</option>                  
+                        </select>
+
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-info " style="margin-top: 0px" >Tìm</button>
+                </div>
+            </div>
+        </div>
+            <!-- kết quả  -->
+            <div class="form-group">
+                <div class="widget-content" id="result-search"><table class="table table-my-hover table-bordered h-center">
+            <thead>
+                <tr align="center">
+                    <th width="20px">STT
+                    </th>
+                    <th>Tên cửa hàng
+                    </th>
+                    <th>Địa chỉ
+                    </th>
+                    <th>Điện thoại
+                    </th>
+                    <th>Vốn đầu tư
+                    </th>
+                    
+                    <th>Quỹ tiền mặt
+                    </th>
+                    <th>Ngày tạo
+                    </th>
+                    <th>Tình trạng
+                    </th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr id="24431" align="center">
+                        <td align="center">
+                            1
+                        </td>
+                        <td id="td-name">
+                                <a routerLinkActive="active" [routerLink]="['/suaThongTinCuaHang']" >abc12</a>
+                        </td>
+                        <td id="td-address">
+                            số 90 đường trên trời
+                        </td>
+                        <td id="td-phone">
+                            0123312902
+                        </td>
+                        <td id="td-total-money" class="cmd-money">
+                            123
+                        </td>
+                        
+                        <td id="td-interest-money-future" class="cmd-money">
+                            0
+                        </td>
+                        <td id="td-date">
+                            20-05-2018
+                        </td>
+        
+                        <td id="td-status" align="center">
+                                <span class="label label-success" id="1">Hoạt động</span>
+                        </td>
+        
+                        <td>
+                                <a href="javascript:void(0);" class="bs-tooltip" title="Đang quản lý">
+                                    <i class="icol-bookmark"></i>
+                                </a>
+                        </td>
+        
+                        <td>
+        
+                            <a href="javascript:void(0);" class="bs-tooltip" title="Xóa cửa hàng" onclick="delete_shop(24431)">
+                                <i class="icol-bin-closed"></i></a>
+                        </td>
+        
+                        <input type="hidden" id="ip-userid-hidden" value="0">
+                        <input type="hidden" id="ip-represent-hidden" value="vuongthanh">
+                    </tr>
+            </tbody>
+        </table>
+        <!--Pagging-->
+        <!-- nhảy trang -->
+        <div class="row">
+                    
+            <div class="col-md-12">
+                <div style="float: right;">
+                <form class="inline">
+                    <button> ← Prev</button>
+                    <button>1</button>
+                    <button>Next →</button>
+
+                </form>
+                </div>
+            </div> 
+                
+    
+        </div>
+        
+        <!--End Padding-->
+        
+        
+        </div>
+            </div>
+        </div>
+        </div>
+    
+</div>

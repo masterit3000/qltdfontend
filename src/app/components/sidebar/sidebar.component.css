@@ -1,11 +1,11 @@
 .menuleft li:hover .submenu{
     display: block;
-    max-height: 300px;
+    max-height: 1000px;
 }
 
 .menuleft li.active .submenu{
   display: block;
-  max-height: 300px;
+  max-height: 1000px;
 }
 
 
