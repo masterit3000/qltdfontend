@@ -1,0 +1,163 @@
+<div class="main-content">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12">
+              <h3>Hợp đồng vay họ</h3>
+              <div class="card">
+                  <div class="card-body">
+                      <form>
+                          <div class="row">
+                              <div class="col-md-4" align="center">
+                                  <label class="radio-inline">
+                                      <input type="radio" name="hopDongNew" id="batHoNew" value="1" checked="checked">
+                                      Khách hàng mới
+                                  </label>
+                              </div>
+                              <div class="col-md-4" align="center">
+                                  <label class="radio-inline">
+                                      <input type="radio" name="hopDongNew" id="batHoOld" value="2">
+                                      Khách hàng đã có trong hệ thống
+                                  </label>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-7">
+                                <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Tên khách hàng" type="text">
+                                  </mat-form-field>
+                              </div>
+                              <div class="col-md-5">
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput placeholder="Mã hợp đồng" type="text">
+                                  </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-7">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="Số CMND/Hộ chiếu" type="number">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-5">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="Số điện thoại" type="text">
+                                </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-7">
+                                      <mat-form-field class="example-full-width">
+                                          <label class="control-label">Ngày cấp</label>
+                                          <input matInput type="date">
+                                      </mat-form-field>
+                              </div>
+                              <div class="col-md-5">
+                                <br />
+                                <mat-form-field class="example-full-width">   
+                                  <input matInput placeholder="Nơi cấp" type="text">
+                                </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                <mat-form-field class="example-full-width">
+                                  <input matInput placeholder="Địa chỉ" type="text">
+                                </mat-form-field>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-7">
+                                <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Bát họ" type="number">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-5">
+                                <br />
+                                <p><font color="red">(Chú ý: Bát họ nghĩa là tổng tiền khách phải đóng)</font></p>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-7">
+                                <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Tiền đưa khách" type="number">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-5">
+                                <br />
+                                <p>(Tổng tiền khách nhận được)</p>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-7">
+                                <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Bốc trong vòng" type="number">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-5">
+                                <br />
+                                <p>Ngày => (xxx <!--Biến-->/1 ngày) <!--Bát họ / số ngày--></p>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-7">
+                                <mat-form-field class="example-full-width">
+                                      <input matInput placeholder="Số ngày đóng tiền" type="number">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-5">
+                                <br />  
+                                <p>(VD: 3 ngày đóng 1 lần thì điền số 3)</p>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-7">
+                                <mat-form-field class="example-full-width">
+                                      <label class="control-label">Ngày bốc</label>
+                                      <input matInput type="date">
+                                </mat-form-field>
+                              </div>
+                              <div class="col-md-5">
+                                <br /><br />
+                                <label class="control-label">Thu họ trước</label>
+                                <input type="checkbox" name="thuHoTruoc" value="1">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                <label>Ghi chú</label>
+                                <mat-form-field class="example-full-width">
+                                   <textarea matInput></textarea>
+                                 </mat-form-field>
+                                  <!-- <div class="form-group">
+
+                                      <div class="form-group">
+                                          <label class="bmd-label-floating"> Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</label>
+                                          <textarea class="form-control" rows="5"></textarea>
+                                      </div>
+                                  </div> -->
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-7">
+                                  <mat-form-field class="example-full-width">
+                                      <label class="control-label">NV Thu tiền</label>
+                                      <select class="custom-select mr-sm-2" >
+                                          <option selected>Nhân viên 1</option>
+                                          <option>Nhân viên 2</option>                               
+                                      </select>
+                                  </mat-form-field>
+                              </div>
+                              <div class="col-md-5">
+                                  <br /><br />
+                                  <p>(Người đi thu tiền họ cho hợp đồng</p>
+                              </div>
+                          </div>
+                          <button mat-raised-button type="submit" class="btn btn-success pull-right">Thêm mới</button>
+                          <div class="clearfix"></div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

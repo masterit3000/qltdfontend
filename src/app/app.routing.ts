@@ -12,8 +12,11 @@ import { MapsComponent } from './maps/maps.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { UpgradeComponent } from './upgrade/upgrade.component';
 import { CamDoComponent } from './cam-do/cam-do.component';
+import { CamDoNewComponent } from './cam-do/cam-do-new/cam-do-new.component';
 import { VaylaiComponent } from './vaylai/vaylai.component';
+import { VaylaiNewComponent } from './vaylai/vaylai-new/vaylai-new.component';
 import { BatHoComponent } from './bat-ho/bat-ho.component';
+import { BatHoNewComponent } from './bat-ho/bat-ho-new/bat-ho-new.component';
 import { DanhSachKhachHangComponent } from './danh-sach-khach-hang/danh-sach-khach-hang.component';
 import { KhachCanVayComponent } from './khach-can-vay/khach-can-vay.component';
 import { CheckThongTinKhachHangComponent } from './check-thong-tin-khach-hang/check-thong-tin-khach-hang.component';
@@ -41,12 +44,15 @@ import { BaoCaoHopDongDaXoaComponent } from './bao-cao-hop-dong-da-xoa/bao-cao-h
 import { BaoCaoTinNhanComponent } from './bao-cao-tin-nhan/bao-cao-tin-nhan.component';
 import { BanGiaoCaComponent } from './ban-giao-ca/ban-giao-ca.component';
 import { DongTienTheoNgayComponent } from './dong-tien-theo-ngay/dong-tien-theo-ngay.component';
+import { CamDoChucNangComponent } from './cam-do/cam-do-chuc-nang/cam-do-chuc-nang.component';
+import { BatHoChucNangComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-chuc-nang.component';
 import { ThemKhachHangComponent } from './them-khach-hang/them-khach-hang.component';
 import { SuaThongTinKhachHangComponent } from './sua-thong-tin-khach-hang/sua-thong-tin-khach-hang.component';
 import { ThemCuaHangComponent } from './them-cua-hang/them-cua-hang.component';
 import { SuaThongTinCuaHangComponent } from './sua-thong-tin-cua-hang/sua-thong-tin-cua-hang.component';
 import { ThemHangHoaComponent } from './them-hang-hoa/them-hang-hoa.component';
 import { SuaHangHoaComponent } from './sua-hang-hoa/sua-hang-hoa.component';
+
 
 
 const routes: Routes =[
@@ -60,10 +66,16 @@ const routes: Routes =[
     { path: 'upgrade',        component: UpgradeComponent },
     // tới trang cầm đồ
     { path: 'camdo',          component: CamDoComponent },
+    { path: 'camdoNew',       component: CamDoNewComponent },
+    { path: 'camdoChucNang',  component: CamDoChucNangComponent },
     // tới trang vay lãi
     { path: 'vaylai',          component: VaylaiComponent },
+    { path: 'vaylaiNew',       component: VaylaiNewComponent },
     // tới trang bát họ
     { path: 'batHo',          component: BatHoComponent },
+    { path: 'batHoNew',       component: BatHoNewComponent },
+    { path: 'batHoChucNang',  component: BatHoChucNangComponent },
+
     // menu khách hàng
     { path: 'danhSachKhachHang',          component: DanhSachKhachHangComponent },
     { path: 'khachCanVay',          component: KhachCanVayComponent },

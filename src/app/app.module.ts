@@ -28,6 +28,7 @@ import {
   AgmCoreModule
 } from '@agm/core';
 import { CamDoComponent } from './cam-do/cam-do.component';
+import { CamDoNewComponent } from './cam-do/cam-do-new/cam-do-new.component';
 import { VaylaiComponent } from './vaylai/vaylai.component';
 import { BatHoComponent } from './bat-ho/bat-ho.component';
 import { DanhSachKhachHangComponent } from './danh-sach-khach-hang/danh-sach-khach-hang.component';
@@ -57,6 +58,10 @@ import { BaoCaoHopDongDaXoaComponent } from './bao-cao-hop-dong-da-xoa/bao-cao-h
 import { BaoCaoTinNhanComponent } from './bao-cao-tin-nhan/bao-cao-tin-nhan.component';
 import { BanGiaoCaComponent } from './ban-giao-ca/ban-giao-ca.component';
 import { DongTienTheoNgayComponent } from './dong-tien-theo-ngay/dong-tien-theo-ngay.component';
+import { CamDoChucNangComponent } from './cam-do/cam-do-chuc-nang/cam-do-chuc-nang.component';
+import { BatHoNewComponent } from './bat-ho/bat-ho-new/bat-ho-new.component';
+import { VaylaiNewComponent } from './vaylai/vaylai-new/vaylai-new.component';
+import { BatHoChucNangComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-chuc-nang.component';
 import { ThemKhachHangComponent } from './them-khach-hang/them-khach-hang.component';
 import { SuaThongTinKhachHangComponent } from './sua-thong-tin-khach-hang/sua-thong-tin-khach-hang.component';
 import { ThemCuaHangComponent } from './them-cua-hang/them-cua-hang.component';
@@ -121,12 +126,18 @@ import { SuaHangHoaComponent } from './sua-hang-hoa/sua-hang-hoa.component';
     BaoCaoTinNhanComponent,
     BanGiaoCaComponent,
     DongTienTheoNgayComponent,
+    CamDoNewComponent,
+    CamDoChucNangComponent,
+    BatHoNewComponent,
+    VaylaiNewComponent,
+    BatHoChucNangComponent,
     ThemKhachHangComponent,
     SuaThongTinKhachHangComponent,
     ThemCuaHangComponent,
     SuaThongTinCuaHangComponent,
     ThemHangHoaComponent,
     SuaHangHoaComponent,
+
     
 
   ],
