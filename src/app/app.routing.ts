@@ -46,6 +46,13 @@ import { BanGiaoCaComponent } from './ban-giao-ca/ban-giao-ca.component';
 import { DongTienTheoNgayComponent } from './dong-tien-theo-ngay/dong-tien-theo-ngay.component';
 import { CamDoChucNangComponent } from './cam-do/cam-do-chuc-nang/cam-do-chuc-nang.component';
 import { BatHoChucNangComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-chuc-nang.component';
+import { ThemKhachHangComponent } from './them-khach-hang/them-khach-hang.component';
+import { SuaThongTinKhachHangComponent } from './sua-thong-tin-khach-hang/sua-thong-tin-khach-hang.component';
+import { ThemCuaHangComponent } from './them-cua-hang/them-cua-hang.component';
+import { SuaThongTinCuaHangComponent } from './sua-thong-tin-cua-hang/sua-thong-tin-cua-hang.component';
+import { ThemHangHoaComponent } from './them-hang-hoa/them-hang-hoa.component';
+import { SuaHangHoaComponent } from './sua-hang-hoa/sua-hang-hoa.component';
+
 
 
 const routes: Routes =[
@@ -104,6 +111,14 @@ const routes: Routes =[
     { path: 'baoCaoTinNhan',          component:BaoCaoTinNhanComponent},
     { path: 'banGiaoCa',          component:BanGiaoCaComponent},
     { path: 'dongTienTheoNgay',          component:DongTienTheoNgayComponent},
+    // danh sách khách hàng
+    { path: 'themKhachHang',          component:ThemKhachHangComponent},
+    { path: 'suaThongTinKhachHang',          component:SuaThongTinKhachHangComponent},
+    { path: 'themCuaHang',          component:ThemCuaHangComponent},
+    { path: 'suaThongTinCuaHang',          component:SuaThongTinCuaHangComponent},
+    { path: 'themHangHoa',          component:ThemHangHoaComponent},
+    { path: 'suaHangHoa',          component:SuaHangHoaComponent},
+   
     { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 

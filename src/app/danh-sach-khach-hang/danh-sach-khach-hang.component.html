@@ -1,26 +1,26 @@
 
 <div class="main-content">
-    <div class="container-fluid">
-        <!-- title -->
-        <div class="card-body">
-        <div class="row">
-            <div class="col-md-8">
-            <h3>Danh sách khách hàng</h3>
-            </div>
-            <div class="col-md-4">
-            <form class="form-inline" role="form">
-                <ul class="nav" style="margin-left: 10px">
-                <li >
-                <button class="btn btn-primary">Thêm khách hàng</button>
-                </li> 
-                <li>
-                    <div style="text-align: center;">
-                    <b>TỔNG SỐ</b><br/>
-                    <b>2</b> 
-                    </div>
-                </li> 
+    <div class="container">
+        <!-- title -->        
+         <div class="page-header">
+             <div class="row">
+                <div class="col-md-8">
+                     <h3>            
+                        Danh sách khách hàng</h3>
+                 </div>
+                
+                        <!-- Page Stats -->
+                <ul class="page-stats">
+                    <li>
+                        <a routerLinkActive="active"  class="btn btn-primary" [routerLink]="['/themKhachHang']" >Thêm Khách Hàng </a>
+                     </li>
+                    <li>
+                        <div class="summary" style="text-align:center;">
+                            <span style="font-size: 14px;">Tổng số</span>
+                            <h3 id="h3-total-account">2</h3>
+                        </div>
+                    </li>
                 </ul>
-            </form>   
             </div>
         </div>
         <!--  -->
@@ -28,32 +28,33 @@
         <div class="form-group">
             <!-- search -->
             <div class="row">
-            <div class="col-md-3">
-                <input type="text"  name="keysearch" class="form-control" placeholder="Tên khách hàng ...">
-            </div>
-            <div class="col-md-3">
-                <select class="custom-select mr-sm-2" >                 
-                    <option selected>abc12</option>                  
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    </select>
-                    
-            </div>
-            <div class="col-md-3">
-                <select class="custom-select mr-sm-2" >
-                    <option selected>Tất cả</option>
-                    <option value="1">Bình thường</option>
-                    <option value="2">Khóa</option>                  
-                    </select>
+                <div class="col-md-3">
+                    <input type="text"  name="keysearch" class="form-control" placeholder="Tên khách hàng ...">
+                </div>
+                <div class="col-md-3">
+                    <select class="custom-select mr-sm-2" >                 
+                        <option selected>abc12</option>                  
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        </select>
+                        
+                </div>
+                <div class="col-md-3">
+                    <select class="custom-select mr-sm-2" >
+                        <option selected>Tất cả</option>
+                        <option value="1">Bình thường</option>
+                        <option value="2">Khóa</option>                  
+                        </select>
 
+                </div>
+                <div class="col-md-1">
+                    <button class="btn btn-info " style="margin-top: 0px" >Tìm</button>
+                </div>
             </div>
-            <div class="col-md-1">
-                <button class="btn btn-info " style="margin-top: 0px" >Tìm</button>
-            </div>
-            </div>
+        </div>
             <!-- kết quả  -->
-            <div class="form-group">
+        <div class="form-group">
                 <table class="table  table-bordered ">
                     <thead>
                         <tr align="center">
@@ -92,7 +93,7 @@
                                 </td>
                                 <td >
                                 <!-- sau này dùng router -->
-                                    <a href="#div-create-staff">asdc</a>
+                                    <a routerLinkActive="active" [routerLink]="['/suaThongTinKhachHang']">asdc</a>
                                 </td>      
                                 <td >
                                     12930129301293asdas
@@ -118,7 +119,6 @@
                                     <a data-toggle="modal" href="#divFilesCustomer" class="btn btn-sm" title="Chứng từ" onclick="ShowFilesCustomer(1378784,'asdc')"><i class="icol-attach"></i></a>
                                     
                                 </td>
-                                <input type="hidden" id="ip-shopid-hidden" value="24431">
                             </tr>
                             <tr  align="center">
                                 <td align="center">
@@ -126,7 +126,7 @@
                                 </td>
                                 <td >
                                 <!-- tương tự 1 -->
-                                    <a href="#div-create-staff">Vốn Khởi Tạo</a>
+                                    <a routerLinkActive="active"  [routerLink]="['/suaThongTinKhachHang']">Vốn Khởi Tạo</a>
                                 </td>      
                                 <td >
                                     
@@ -151,32 +151,23 @@
                                 <!-- đến chứng từ -->
                                     <a data-toggle="modal" href="#divFilesCustomer" class="btn btn-sm" title="Chứng từ" onclick="ShowFilesCustomer(1357542,'Vốn Khởi Tạo')"><i class="icol-attach"></i></a>
                                     
-                                </td>
-                                
+                                </td>                  
                             </tr>
                     </tbody>
                 </table>
                 <!-- nhảy trang -->
-                <div class="row">
-                    
+                <div class="row">            
                     <div class="col-md-12">
                         <div style="float: right;">
                         <form class="inline">
                             <button> ← Prev</button>
                             <button>1</button>
                             <button>Next →</button>
-
                         </form>
                         </div>
-                    </div> 
-                        
-            
+                    </div>     
                 </div>
-
             </div>
         </div>
         </div>
-    
-    </div>
-     </div>
 </div>

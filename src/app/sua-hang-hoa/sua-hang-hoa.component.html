@@ -1,0 +1,173 @@
+<div class="main-content">
+    <div class="container">
+    <div class="modal-header">
+             
+      <h2 class="modal-title">Hàng hóa</h2>
+    </div>
+    <div class="modal-body pt10">
+              <div class="widget box">
+                  <div class="widget-content">
+                      <form class="form-horizontal row-border" >
+                          <div class="row">
+                              <label class="col-md-2 ">
+                                  Lĩnh vực
+                              </label>
+                              <div class="col-md-4">
+                                  <select class="custom-select mr-sm-2">
+                                       <option value="4" selected="selected">Cầm đồ</option>
+                                      <option value="1">Vay lãi</option>
+                                    </select>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2">
+                                 Tên hàng hóa <span class="required">*</span>
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text"  name="Name" class="form-control" >
+                              </div>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2 ">
+                                  Mã hàng
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" id="txtCode" name="Code" class="form-control">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2 ">
+                                  Trạng thái
+                              </label>
+                              <div class="col-md-4">
+                                  <select class="custom-select mr-sm-2">
+                  <option value="1" selected="selected">Hoạt động</option>
+                  <option value="0">Tạm khóa</option>
+                </select>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <h3 style="margin-left:56px;color:orangered">Cấu hình giá trị mặc định</h3>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2 ">
+                                  Số tiền cầm <span class="required">*</span>
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" id="TotalMoney" name="strTotalMoney" class="inputAmountUSD form-control digits" value="10000000">
+                              </div>
+                              <div class="col-md-4">
+                                  <label class="checkbox-inline">
+                  <input type="checkbox" value="1" name="IsBefore" id="IsBefore"> Thu lãi trước
+                </label>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2">
+                                  Lãi ngày <span class="required">*</span>
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" id="Rate" name="strRate" class="form-control digits inputAmountUSD" value="3">
+                              </div>
+                              <div class="col-md-5">
+                                  <label class="radio-inline" id="RateType1">
+                  <input type="radio" id="RateType1_R" name="RateType" value="1" checked="checked">
+                  k/1 triệu
+                </label>
+                <label class="radio-inline" id="RateType2">
+                  <input type="radio" id="RateType2_R" name="RateType" value="2">
+                  Tổng tiền
+                </label>
+                                  <label class="radio-inline" id="RateType3" style="display:none">
+                  <input type="radio" id="RateType3_R" name="RateType" value="3">
+                  Lãi theo tháng
+                </label>
+                                  <label class="radio-inline" id="RateType4" style="display:none">
+                  <input type="radio" id="RateType4_R" name="RateType" value="4">
+                  Lãi theo tuần (VD : 2% / 1 tuần)
+                </label>
+                                  <label class="radio-inline" id="RateType5" style="display:none">
+                  <input type="radio" id="RateType5_R" name="RateType" value="5">
+                  Lãi theo tuần (VD : 100k / 1 tuần)
+                </label>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2">
+                                  Kỳ lãi <span class="required">*</span>
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" id="Frequency" name="strFrequency" class="form-control inputAmountUSD" minlength="5" value="15">
+                              </div>
+                              <div class="col-md-4" id="Frequency_EX">
+                                  (VD : 15 ngày đóng lãi 1 lần thì điền số 15 )
+                              </div>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2">
+                                  Thanh lý sau
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" id="txtMaxDayOverdue" name="strMaxDayOverdue" class="form-control digits inputAmountUSD" value="10">
+                              </div>
+                              <div class="col-md-4" style="padding-top:7px;">
+                                  ngày quá hạn
+                              </div>
+                          </div>
+  
+                          <div class="row">
+                              <h3 style="margin-left:56px;color:orangered">Cấu hình thuộc tính hàng hóa</h3>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2">
+                                  Thuộc tính 01
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" id="txtExtend1" name="Extend1" class="form-control">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2">
+                                  Thuộc tính 02
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" id="txtExtend2" name="Extend2" class="form-control">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2">
+                                  Thuộc tính 03
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" id="txtExtend3" name="Extend3" class="form-control">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2">
+                                  Thuộc tính 04
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" id="txtExtend4" name="Extend4" class="form-control">
+                              </div>
+                          </div>
+                          <div class="row">
+                              <label class="col-md-2">
+                                  Thuộc tính 05
+                              </label>
+                              <div class="col-md-4">
+                                  <input type="text" id="txtExtend5" name="Extend5" class="form-control">
+                              </div>
+                          </div>
+                          <div class="modal-footer">
+                              <button id="btnCreatePawn" class="btn btn-primary pull-right">Cập nhật</button>
+                              <button type="button" id="btn-cancel" class="btn btn-default pull-right" data-dismiss="modal">Thoát</button>
+                              
+                          </div>
+                          
+                      </form>
+                  </div>
+              </div>
+    </div>
+  </div>
+  </div>
+  

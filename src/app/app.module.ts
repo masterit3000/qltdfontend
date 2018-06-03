@@ -62,6 +62,12 @@ import { CamDoChucNangComponent } from './cam-do/cam-do-chuc-nang/cam-do-chuc-na
 import { BatHoNewComponent } from './bat-ho/bat-ho-new/bat-ho-new.component';
 import { VaylaiNewComponent } from './vaylai/vaylai-new/vaylai-new.component';
 import { BatHoChucNangComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-chuc-nang.component';
+import { ThemKhachHangComponent } from './them-khach-hang/them-khach-hang.component';
+import { SuaThongTinKhachHangComponent } from './sua-thong-tin-khach-hang/sua-thong-tin-khach-hang.component';
+import { ThemCuaHangComponent } from './them-cua-hang/them-cua-hang.component';
+import { SuaThongTinCuaHangComponent } from './sua-thong-tin-cua-hang/sua-thong-tin-cua-hang.component';
+import { ThemHangHoaComponent } from './them-hang-hoa/them-hang-hoa.component';
+import { SuaHangHoaComponent } from './sua-hang-hoa/sua-hang-hoa.component';
 
 
 @NgModule({
@@ -125,6 +131,13 @@ import { BatHoChucNangComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-chuc-na
     BatHoNewComponent,
     VaylaiNewComponent,
     BatHoChucNangComponent,
+    ThemKhachHangComponent,
+    SuaThongTinKhachHangComponent,
+    ThemCuaHangComponent,
+    SuaThongTinCuaHangComponent,
+    ThemHangHoaComponent,
+    SuaHangHoaComponent,
+
     
 
   ],

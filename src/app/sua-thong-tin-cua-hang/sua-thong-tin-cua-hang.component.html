@@ -1,0 +1,82 @@
+
+<div class="main-content">
+    <div class="container">
+        <!-- title -->
+        <div  class="modal-header">
+            <h2 class="modal-title">Sửa thông tin cửa hàng</h2>
+
+        </div>
+        <!-- body -->
+        <div class="modal-body">
+            <form class="form-horizontal row-border" >
+                <div class="form-group">
+                    <label class="col-md-3 control-label">
+                        Tên cửa hàng <span class="required">*</span></label>
+                    <div class="col-md-9">
+                        <input type="text" id="ip-name" name="Name" class="form-control " minlength="5" data-rule-required="true" data-msg-required="Tên cửa hàng của bạn không để trống!">
+                    </div>
+                </div>
+                <div class="form-group" id="div-pass">
+                    <label class="col-md-3 control-label">
+                        Số điện thoại
+                    </label>
+                    <div class="col-md-9">
+                        <input type="text" id="ip-phone" name="Phone" class="form-control " data-rule-required="true" data-msg-required="Số điện thoại không được để trống !">
+                    </div>
+                </div>
+
+               
+
+                <div class="form-group has-success">
+                    <label class="col-md-3 control-label">
+                        Địa chỉ</label>
+                    <div class="col-md-9">
+                        <input type="text" id="ip-address" name="Address" class="form-control has-success" data-rule-required="true" data-msg-required="Địa chỉ không được để trống !">
+                    </div>
+                </div>
+                <div class="form-group has-success">
+                    <label class="col-md-3 control-label">
+                        Người đại diện
+                    </label>
+                    <div class="col-md-9">
+                        <input type="text" id="id-represent" name="Represent" class="form-control has-success" data-rule-required="true" data-msg-required="Người đại diện không được để trống !">
+                    </div>
+                </div>
+                <div class="form-group ptb5">
+                    <label class="col-md-3 control-label">
+                        Số vốn đầu tư<span class="required">*</span>
+                    </label>
+                    <div class="col-md-9">
+                        <input type="text" id="ip-total-money" name="TotalMoney" class="inputAmountUSD form-control " data-rule-required="true" data-msg-required="Vốn đầu tư không để trống!" disabled="disabled">
+                    </div>
+                </div>
+                <div class="form-group" id="div-status">
+                    <label class="col-md-3 control-label">
+                        Trạng thái
+                    </label>
+                    <div class="col-md-9">
+                        <label class="radio-inline">
+                            <input type="radio" id="ip-status-1" name="Status" checked="checked">
+                            Hoạt động</label>
+                        <label class="radio-inline">
+                            <input type="radio" id="ip-status-0" name="Status">
+                            Tạm ngưng</label>
+                    </div>
+                </div>
+            
+            </form>
+        </div>
+        <!-- footer -->
+        <div class="modal-footer">
+            <button type="button" id="btn-cancel" class="btn btn-default pull-right" >
+                Hủy</button>
+            
+                <button id="btn-submit" class="btn btn-primary pull-right" >
+                    Cập nhật</button>
+              
+            
+        </div>
+         
+        </div>
+    
+</div>
