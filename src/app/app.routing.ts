@@ -46,6 +46,13 @@ import { BanGiaoCaComponent } from './ban-giao-ca/ban-giao-ca.component';
 import { DongTienTheoNgayComponent } from './dong-tien-theo-ngay/dong-tien-theo-ngay.component';
 import { CamDoChucNangComponent } from './cam-do/cam-do-chuc-nang/cam-do-chuc-nang.component';
 import { BatHoChucNangComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-chuc-nang.component';
+import { VaylaiChucNangComponent } from './vaylai/vaylai-chuc-nang/vaylai-chuc-nang.component';
+import { BatHoLichDongTienComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-lich-dong-tien/bat-ho-lich-dong-tien.component';
+import { BatHoDongHopDongComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-dong-hop-dong/bat-ho-dong-hop-dong.component';
+import { BatHoNoComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-no/bat-ho-no.component';
+import { BatHoLichSuComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-lich-su/bat-ho-lich-su.component';
+import { BatHoDaoHoComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-dao-ho/bat-ho-dao-ho.component';
+import { BatHoHenGioComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-hen-gio/bat-ho-hen-gio.component';
 
 
 const routes: Routes =[
@@ -64,10 +71,17 @@ const routes: Routes =[
     // tới trang vay lãi
     { path: 'vaylai',          component: VaylaiComponent },
     { path: 'vaylaiNew',       component: VaylaiNewComponent },
+    { path: 'vaylaiChucNang',  component: VaylaiChucNangComponent },
     // tới trang bát họ
     { path: 'batHo',          component: BatHoComponent },
     { path: 'batHoNew',       component: BatHoNewComponent },
     { path: 'batHoChucNang',  component: BatHoChucNangComponent },
+    { path: 'batHoLichDongTien',  component: BatHoLichDongTienComponent },
+    { path: 'batHoDongHopDong',   component: BatHoDongHopDongComponent },
+    { path: 'batHoNo',            component: BatHoNoComponent },
+    { path: 'batHoLichSu',        component: BatHoLichSuComponent },
+    { path: 'batHoDaoHo',         component: BatHoDaoHoComponent },
+    { path: 'batHoHenGio',        component: BatHoHenGioComponent },
 
     // menu khách hàng
     { path: 'danhSachKhachHang',          component: DanhSachKhachHangComponent },

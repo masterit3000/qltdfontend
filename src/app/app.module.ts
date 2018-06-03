@@ -62,6 +62,13 @@ import { CamDoChucNangComponent } from './cam-do/cam-do-chuc-nang/cam-do-chuc-na
 import { BatHoNewComponent } from './bat-ho/bat-ho-new/bat-ho-new.component';
 import { VaylaiNewComponent } from './vaylai/vaylai-new/vaylai-new.component';
 import { BatHoChucNangComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-chuc-nang.component';
+import { VaylaiChucNangComponent } from './vaylai/vaylai-chuc-nang/vaylai-chuc-nang.component';
+import { BatHoLichDongTienComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-lich-dong-tien/bat-ho-lich-dong-tien.component';
+import { BatHoDongHopDongComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-dong-hop-dong/bat-ho-dong-hop-dong.component';
+import { BatHoNoComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-no/bat-ho-no.component';
+import { BatHoLichSuComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-lich-su/bat-ho-lich-su.component';
+import { BatHoDaoHoComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-dao-ho/bat-ho-dao-ho.component';
+import { BatHoHenGioComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-hen-gio/bat-ho-hen-gio.component';
 
 
 @NgModule({
@@ -125,6 +132,13 @@ import { BatHoChucNangComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-chuc-na
     BatHoNewComponent,
     VaylaiNewComponent,
     BatHoChucNangComponent,
+    VaylaiChucNangComponent,
+    BatHoLichDongTienComponent,
+    BatHoDongHopDongComponent,
+    BatHoNoComponent,
+    BatHoLichSuComponent,
+    BatHoDaoHoComponent,
+    BatHoHenGioComponent,
     
 
   ],

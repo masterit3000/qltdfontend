@@ -1,0 +1,64 @@
+<div class="container-fluid">
+  <div class="main-content">
+    <form>
+      <div class="row">
+        <div class="col-md-12">
+          <mat-form-field class="example-full-width">
+            <label class="control-label">Ngày đảo họ</label>
+            <input matInput type="date">
+          </mat-form-field>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <mat-form-field class="example-full-width">
+            <input matInput type="number" placeholder="Bát họ mới">
+          </mat-form-field>
+        </div>
+        <div class="col-md-5">
+          <p><font color="red">(@Chú ý: Bát họ nghĩa là tổng tiền khách phải đóng)</font></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <mat-form-field class="example-full-width">
+            <input matInput type="number" placeholder="Tiền đưa khách">
+          </mat-form-field>
+        </div>
+        <div class="col-md-5">
+          <p><font color="red">(Đừng trừ tiền còn phải đóng của bát cũ vào đây. Hệ thống trừ sau)</font></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <mat-form-field class="example-full-width">
+            <input matInput type="number" placeholder="Bốc trong vòng">
+          </mat-form-field>
+        </div>
+        <div class="col-md-5">
+          <p>Ngày => (<font color="red">x<!--Biến--></font>/1 ngày)</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-7">
+          <mat-form-field class="example-full-width">
+            <input matInput type="number" placeholder="Số ngày đóng tiền">
+          </mat-form-field>
+        </div>
+        <div class="col-md-5">
+          <p>(VD: 3 ngày đóng 1 lần thì điền số 3)</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p><font color="red">Tiền khách nhận về: a - b = (a-b)</font></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <button class="btn btn-info">Đảo họ</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
