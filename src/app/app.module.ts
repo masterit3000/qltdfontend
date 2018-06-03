@@ -61,6 +61,8 @@ import { ThemKhachHangComponent } from './them-khach-hang/them-khach-hang.compon
 import { SuaThongTinKhachHangComponent } from './sua-thong-tin-khach-hang/sua-thong-tin-khach-hang.component';
 import { ThemCuaHangComponent } from './them-cua-hang/them-cua-hang.component';
 import { SuaThongTinCuaHangComponent } from './sua-thong-tin-cua-hang/sua-thong-tin-cua-hang.component';
+import { ThemHangHoaComponent } from './them-hang-hoa/them-hang-hoa.component';
+import { SuaHangHoaComponent } from './sua-hang-hoa/sua-hang-hoa.component';
 
 
 @NgModule({
@@ -123,6 +125,8 @@ import { SuaThongTinCuaHangComponent } from './sua-thong-tin-cua-hang/sua-thong-
     SuaThongTinKhachHangComponent,
     ThemCuaHangComponent,
     SuaThongTinCuaHangComponent,
+    ThemHangHoaComponent,
+    SuaHangHoaComponent,
     
 
   ],

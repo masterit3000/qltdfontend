@@ -45,6 +45,8 @@ import { ThemKhachHangComponent } from './them-khach-hang/them-khach-hang.compon
 import { SuaThongTinKhachHangComponent } from './sua-thong-tin-khach-hang/sua-thong-tin-khach-hang.component';
 import { ThemCuaHangComponent } from './them-cua-hang/them-cua-hang.component';
 import { SuaThongTinCuaHangComponent } from './sua-thong-tin-cua-hang/sua-thong-tin-cua-hang.component';
+import { ThemHangHoaComponent } from './them-hang-hoa/them-hang-hoa.component';
+import { SuaHangHoaComponent } from './sua-hang-hoa/sua-hang-hoa.component';
 
 
 const routes: Routes =[
@@ -102,6 +104,8 @@ const routes: Routes =[
     { path: 'suaThongTinKhachHang',          component:SuaThongTinKhachHangComponent},
     { path: 'themCuaHang',          component:ThemCuaHangComponent},
     { path: 'suaThongTinCuaHang',          component:SuaThongTinCuaHangComponent},
+    { path: 'themHangHoa',          component:ThemHangHoaComponent},
+    { path: 'suaHangHoa',          component:SuaHangHoaComponent},
    
     { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
 ];
