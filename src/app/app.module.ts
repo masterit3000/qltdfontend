@@ -69,6 +69,30 @@ import { BatHoNoComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-no/bat-ho-no.
 import { BatHoLichSuComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-lich-su/bat-ho-lich-su.component';
 import { BatHoDaoHoComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-dao-ho/bat-ho-dao-ho.component';
 import { BatHoHenGioComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-hen-gio/bat-ho-hen-gio.component';
+import { ThemKhachHangComponent } from './them-khach-hang/them-khach-hang.component';
+import { SuaThongTinKhachHangComponent } from './sua-thong-tin-khach-hang/sua-thong-tin-khach-hang.component';
+import { ThemCuaHangComponent } from './them-cua-hang/them-cua-hang.component';
+import { SuaThongTinCuaHangComponent } from './sua-thong-tin-cua-hang/sua-thong-tin-cua-hang.component';
+import { ThemHangHoaComponent } from './them-hang-hoa/them-hang-hoa.component';
+import { SuaHangHoaComponent } from './sua-hang-hoa/sua-hang-hoa.component';
+import { CamDoDongTienLaiComponent } from './cam-do/cam-do-chuc-nang/cam-do-dong-tien-lai/cam-do-dong-tien-lai.component';
+import { CamDoTraBotGocComponent } from './cam-do/cam-do-chuc-nang/cam-do-tra-bot-goc/cam-do-tra-bot-goc.component';
+import { CamDoVayThemComponent } from './cam-do/cam-do-chuc-nang/cam-do-vay-them/cam-do-vay-them.component';
+import { CamDoChuocDoComponent } from './cam-do/cam-do-chuc-nang/cam-do-chuoc-do/cam-do-chuoc-do.component';
+import { CamDoNoComponent } from './cam-do/cam-do-chuc-nang/cam-do-no/cam-do-no.component';
+import { CamDoLichSuComponent } from './cam-do/cam-do-chuc-nang/cam-do-lich-su/cam-do-lich-su.component';
+import { CamDoLichSuTraChamComponent } from './cam-do/cam-do-chuc-nang/cam-do-lich-su-tra-cham/cam-do-lich-su-tra-cham.component';
+import { CamDoHenGioComponent } from './cam-do/cam-do-chuc-nang/cam-do-hen-gio/cam-do-hen-gio.component';
+import { CamDoThanhLyComponent } from './cam-do/cam-do-chuc-nang/cam-do-thanh-ly/cam-do-thanh-ly.component';
+import { VaylaiDongLaiComponent } from './vaylai/vaylai-chuc-nang/vaylai-dong-lai/vaylai-dong-lai.component';
+import { VaylaiTraBotGocComponent } from './vaylai/vaylai-chuc-nang/vaylai-tra-bot-goc/vaylai-tra-bot-goc.component';
+import { VaylaiVayThemComponent } from './vaylai/vaylai-chuc-nang/vaylai-vay-them/vaylai-vay-them.component';
+import { VaylaiGiaHanComponent } from './vaylai/vaylai-chuc-nang/vaylai-gia-han/vaylai-gia-han.component';
+import { VaylaiDongHdComponent } from './vaylai/vaylai-chuc-nang/vaylai-dong-hd/vaylai-dong-hd.component';
+import { VaylaiNoComponent } from './vaylai/vaylai-chuc-nang/vaylai-no/vaylai-no.component';
+import { VaylaiLichSuComponent } from './vaylai/vaylai-chuc-nang/vaylai-lich-su/vaylai-lich-su.component';
+import { VaylaiLichSuTraChamComponent } from './vaylai/vaylai-chuc-nang/vaylai-lich-su-tra-cham/vaylai-lich-su-tra-cham.component';
+import { VaylaiHenGioComponent } from './vaylai/vaylai-chuc-nang/vaylai-hen-gio/vaylai-hen-gio.component';
 
 
 @NgModule({
@@ -139,6 +163,31 @@ import { BatHoHenGioComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-hen-gio/b
     BatHoLichSuComponent,
     BatHoDaoHoComponent,
     BatHoHenGioComponent,
+    ThemKhachHangComponent,
+    SuaThongTinKhachHangComponent,
+    ThemCuaHangComponent,
+    SuaThongTinCuaHangComponent,
+    ThemHangHoaComponent,
+    SuaHangHoaComponent,
+    CamDoDongTienLaiComponent,
+    CamDoTraBotGocComponent,
+    CamDoVayThemComponent,
+    CamDoChuocDoComponent,
+    CamDoNoComponent,
+    CamDoLichSuComponent,
+    CamDoLichSuTraChamComponent,
+    CamDoHenGioComponent,
+    CamDoThanhLyComponent,
+    VaylaiDongLaiComponent,
+    VaylaiTraBotGocComponent,
+    VaylaiVayThemComponent,
+    VaylaiGiaHanComponent,
+    VaylaiDongHdComponent,
+    VaylaiNoComponent,
+    VaylaiLichSuComponent,
+    VaylaiLichSuTraChamComponent,
+    VaylaiHenGioComponent,
+
     
 
   ],

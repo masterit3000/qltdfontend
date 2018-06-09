@@ -2,7 +2,6 @@ import { NgModule, Component } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
-
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { TableListComponent } from './table-list/table-list.component';
@@ -53,6 +52,31 @@ import { BatHoNoComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-no/bat-ho-no.
 import { BatHoLichSuComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-lich-su/bat-ho-lich-su.component';
 import { BatHoDaoHoComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-dao-ho/bat-ho-dao-ho.component';
 import { BatHoHenGioComponent } from './bat-ho/bat-ho-chuc-nang/bat-ho-hen-gio/bat-ho-hen-gio.component';
+import { ThemKhachHangComponent } from './them-khach-hang/them-khach-hang.component';
+import { SuaThongTinKhachHangComponent } from './sua-thong-tin-khach-hang/sua-thong-tin-khach-hang.component';
+import { ThemCuaHangComponent } from './them-cua-hang/them-cua-hang.component';
+import { SuaThongTinCuaHangComponent } from './sua-thong-tin-cua-hang/sua-thong-tin-cua-hang.component';
+import { ThemHangHoaComponent } from './them-hang-hoa/them-hang-hoa.component';
+import { SuaHangHoaComponent } from './sua-hang-hoa/sua-hang-hoa.component';
+import { CamDoDongTienLaiComponent } from './cam-do/cam-do-chuc-nang/cam-do-dong-tien-lai/cam-do-dong-tien-lai.component';
+import { CamDoTraBotGocComponent } from './cam-do/cam-do-chuc-nang/cam-do-tra-bot-goc/cam-do-tra-bot-goc.component';
+import { CamDoVayThemComponent } from './cam-do/cam-do-chuc-nang/cam-do-vay-them/cam-do-vay-them.component';
+import { CamDoChuocDoComponent } from './cam-do/cam-do-chuc-nang/cam-do-chuoc-do/cam-do-chuoc-do.component';
+import { CamDoNoComponent } from './cam-do/cam-do-chuc-nang/cam-do-no/cam-do-no.component';
+import { CamDoLichSuComponent } from './cam-do/cam-do-chuc-nang/cam-do-lich-su/cam-do-lich-su.component';
+import { CamDoLichSuTraChamComponent } from './cam-do/cam-do-chuc-nang/cam-do-lich-su-tra-cham/cam-do-lich-su-tra-cham.component';
+import { CamDoHenGioComponent } from './cam-do/cam-do-chuc-nang/cam-do-hen-gio/cam-do-hen-gio.component';
+import { CamDoThanhLyComponent } from './cam-do/cam-do-chuc-nang/cam-do-thanh-ly/cam-do-thanh-ly.component';
+import { VaylaiDongLaiComponent } from './vaylai/vaylai-chuc-nang/vaylai-dong-lai/vaylai-dong-lai.component';
+import { VaylaiTraBotGocComponent } from './vaylai/vaylai-chuc-nang/vaylai-tra-bot-goc/vaylai-tra-bot-goc.component';
+import { VaylaiVayThemComponent } from './vaylai/vaylai-chuc-nang/vaylai-vay-them/vaylai-vay-them.component';
+import { VaylaiGiaHanComponent } from './vaylai/vaylai-chuc-nang/vaylai-gia-han/vaylai-gia-han.component';
+import { VaylaiDongHdComponent } from './vaylai/vaylai-chuc-nang/vaylai-dong-hd/vaylai-dong-hd.component';
+import { VaylaiNoComponent } from './vaylai/vaylai-chuc-nang/vaylai-no/vaylai-no.component';
+import { VaylaiLichSuComponent } from './vaylai/vaylai-chuc-nang/vaylai-lich-su/vaylai-lich-su.component';
+import { VaylaiLichSuTraChamComponent } from './vaylai/vaylai-chuc-nang/vaylai-lich-su-tra-cham/vaylai-lich-su-tra-cham.component';
+import { VaylaiHenGioComponent } from './vaylai/vaylai-chuc-nang/vaylai-hen-gio/vaylai-hen-gio.component';
+
 
 
 const routes: Routes =[
@@ -68,10 +92,28 @@ const routes: Routes =[
     { path: 'camdo',          component: CamDoComponent },
     { path: 'camdoNew',       component: CamDoNewComponent },
     { path: 'camdoChucNang',  component: CamDoChucNangComponent },
+    { path: 'camdoDongTienLai',  component: CamDoDongTienLaiComponent },
+    { path: 'camdoTraBotGoc',    component: CamDoTraBotGocComponent },
+    { path: 'camdoVayThem',      component: CamDoVayThemComponent },
+    { path: 'camdoChuocDo',      component: CamDoChuocDoComponent },
+    { path: 'camdoNo',           component: CamDoNoComponent },
+    { path: 'camdoLichSu',       component: CamDoLichSuComponent },
+    { path: 'camdoLichSuTraCham',       component: CamDoLichSuTraChamComponent },
+    { path: 'camdoHenGio',       component: CamDoHenGioComponent },
+    { path: 'camdoThanhLy',       component: CamDoThanhLyComponent },
     // tới trang vay lãi
-    { path: 'vaylai',          component: VaylaiComponent },
-    { path: 'vaylaiNew',       component: VaylaiNewComponent },
-    { path: 'vaylaiChucNang',  component: VaylaiChucNangComponent },
+    { path: 'vaylai',           component: VaylaiComponent },
+    { path: 'vaylaiNew',        component: VaylaiNewComponent },
+    { path: 'vaylaiChucNang',   component: VaylaiChucNangComponent },
+    { path: 'vaylaiDongLai',    component: VaylaiDongLaiComponent },
+    { path: 'vaylaiTraBotGoc',  component: VaylaiTraBotGocComponent },
+    { path: 'vaylaiVayThem',    component: VaylaiVayThemComponent },
+    { path: 'vaylaiGiaHan',     component: VaylaiGiaHanComponent },
+    { path: 'vaylaiDongHd',     component: VaylaiDongHdComponent },
+    { path: 'vaylaiNo',         component: VaylaiNoComponent },
+    { path: 'vaylaiLichSu',     component: VaylaiLichSuComponent },
+    { path: 'vaylaiLichSuTraCham',  component: VaylaiLichSuTraChamComponent },
+    { path: 'vaylaiHenGio',         component: VaylaiHenGioComponent },
     // tới trang bát họ
     { path: 'batHo',          component: BatHoComponent },
     { path: 'batHoNew',       component: BatHoNewComponent },
@@ -118,6 +160,14 @@ const routes: Routes =[
     { path: 'baoCaoTinNhan',          component:BaoCaoTinNhanComponent},
     { path: 'banGiaoCa',          component:BanGiaoCaComponent},
     { path: 'dongTienTheoNgay',          component:DongTienTheoNgayComponent},
+    // danh sách khách hàng
+    { path: 'themKhachHang',          component:ThemKhachHangComponent},
+    { path: 'suaThongTinKhachHang',          component:SuaThongTinKhachHangComponent},
+    { path: 'themCuaHang',          component:ThemCuaHangComponent},
+    { path: 'suaThongTinCuaHang',          component:SuaThongTinCuaHangComponent},
+    { path: 'themHangHoa',          component:ThemHangHoaComponent},
+    { path: 'suaHangHoa',          component:SuaHangHoaComponent},
+   
     { path: '',               redirectTo: 'dashboard', pathMatch: 'full' }
 ];
 
