@@ -14,3 +14,6 @@
     max-height: 0;
     -webkit-transition: all 0.5s ease-out;
   }
+  .andi{
+    display: none;
+  }

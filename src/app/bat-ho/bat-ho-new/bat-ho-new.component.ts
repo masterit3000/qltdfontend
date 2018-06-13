@@ -9,6 +9,16 @@ export class BatHoNewComponent implements OnInit {
 
   constructor() { }
 
+  khachang ={
+    ten:"",
+    diachi:"",
+    cmt:"",
+    dienthoai:""
+  }
+  themMoiKhachHang = function(){
+
+    console.log(this.khachang);
+  }
   ngOnInit() {
   }
 

@@ -22,6 +22,7 @@ export const ROUTES: RouteInfo[] = [
             {  path: 'danhSachKhachHang', title: 'Danh sách khách hàng', icon: 'keyboard_arrow_right', class: ''},
             { path: 'khachCanVay', title: 'Khách cần vay', icon: 'keyboard_arrow_right', class: '' },
             { path: 'checkThongTinKhachHang', title: 'Check thông tin khách hàng', icon: 'keyboard_arrow_right', class: '' },
+            { path: 'themKhachHang', title: 'Them khach hang', icon: 'keyboard_arrow_right', class: 'andi' },
         ] 
     },
     //test cửa hàng
@@ -87,8 +88,42 @@ export class SidebarComponent implements OnInit {
     menuItems: any[];
 
     constructor() { }
-
+    listKhachHang = [];
     ngOnInit() {
+        this.listKhachHang = [
+            {
+              ten:"abc",
+              diachi:"aabccc"  
+            },
+            {
+              ten:"abc",
+              diachi:"aabccc"  
+            },
+            {
+              ten:"abc",
+              diachi:"aabccc"  
+            },
+            {
+              ten:"abc",
+              diachi:"aabccc"  
+            },
+            {
+              ten:"abc",
+              diachi:"aabccc"  
+            },
+            {
+              ten:"abc",
+              diachi:"aabccc"  
+            },
+            {
+              ten:"abc",
+              diachi:"aabccc"  
+            },
+            {
+              ten:"abc",
+              diachi:"aabccc"  
+            }
+        ];
         // this.menuItems = ROUTES.filter(menuItem => menuItem);
         this.menuItems = ROUTES;
         // this.menuItems.forEach((menuItem) => {

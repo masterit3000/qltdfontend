@@ -1,88 +1,181 @@
 <div class="main-content">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <h3>Hợp đồng cầm đồ</h3>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Hợp đồng cầm đồ</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <table class="table table-bordered">
+          <thead>
+            <th colspan="4">
+              <font color="red">Tên khách hàng
+                <!--Biến-->
+              </font>
+            </th>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="2">
+                Tiền cầm
+              </td>
+              <td colspan="2" align="right">
+                0 VNĐ
+                <!--Biến-->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                Vay từ ngày
+              </td>
+              <td align="center">
+                dd/mm/yyyy
+                <!--Biến-->
+              </td>
+              <td align="center">
+                dd/mm/yyyy
+                <!--Biến-->
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                Ngày trả lãi gần nhất
+              </td>
+              <td colspan="2" align="center">
+                dd/mm/yyyy
+                <!--Biến-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td>
+                Lãi suất
+              </td>
+              <td align="right">
+                (3k/1 triệu)
+                <!--Biến-->
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Tiền Lãi đã đóng
+              </td>
+              <td align="right">
+                0 VNĐ
+                <!--Biến-->
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <font color="red">Nợ cũ</font>
+              </td>
+              <td align="right">
+                <font color="red">0 VNĐ</font>
+                <!--Biến-->
+              </td>
+            </tr>
+            <tr>
+              <td>
+                Trạng thái
+              </td>
+              <td align="right">
+                Đang cầm
+                <!--Biến-->
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header card-header-tabs card-header-danger">
+            <div class="nav-tabs-navigation">
+              <div class="nav-tabs-wrapper">
+                <ul class="nav nav-tabs" data-tabs="tabs">
+                  <li class="nav-item">
+                    <a mat-button class="nav-link active" href="#dongTienLai" data-toggle="tab">
+                      Đóng tiền lãi
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a mat-button class="nav-link" href="#traBotGoc" data-toggle="tab">
+                      Trả bớt gốc
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a mat-button class="nav-link" href="#vayThem" data-toggle="tab">
+                      Vay thêm
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a mat-button class="nav-link" href="#chuocDo" data-toggle="tab">
+                      Chuộc đồ
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a mat-button class="nav-link" href="#lichSu" data-toggle="tab">
+                      Lịch sử
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a mat-button class="nav-link" href="#lichSuTraCham" data-toggle="tab">
+                      Lịch sử trả chậm
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a mat-button class="nav-link" href="#henGio" data-toggle="tab">
+                      Hẹn giờ
+                      <div class="ripple-container"></div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="tab-content">
+              <div class="tab-pane active" id="dongTienLai">
+                <app-cam-do-dong-tien-lai></app-cam-do-dong-tien-lai>
+              </div>
+              <div class="tab-pane" id="traBotGoc">
+                <app-cam-do-tra-bot-goc></app-cam-do-tra-bot-goc>
+              </div>
+              <div class="tab-pane" id="vayThem">
+                <app-cam-do-vay-them></app-cam-do-vay-them>
+              </div>
+              <div class="tab-pane" id="chuocDo">
+                <app-cam-do-chuoc-do></app-cam-do-chuoc-do>
+              </div>
+              <div class="tab-pane" id="no">
+                <app-cam-do-no></app-cam-do-no>
+              </div>
+              <div class="tab-pane" id="lichSu">
+                <app-cam-do-lich-su></app-cam-do-lich-su>
+              </div>
+              <div class="tab-pane" id="lichSuTraCham">
+                <app-cam-do-lich-su-tra-cham></app-cam-do-lich-su-tra-cham>
+              </div>
+              <div class="tab-pane" id="henGio">
+                <app-cam-do-hen-gio></app-cam-do-hen-gio>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-        <div class="row">
-            <div class="col-md-6">
-                <table class="table table-bordered">
-                  <thead>
-                    <th colspan="4">
-                        <font color="red">Tên khách hàng <!--Biến--></font>
-                    </th>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td colspan="2">
-                        Tiền cầm
-                      </td>
-                      <td colspan="2" align="right">
-                        0 VNĐ <!--Biến-->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">
-                        Vay từ ngày
-                      </td>
-                      <td align="center">
-                        dd/mm/yyyy <!--Biến-->
-                      </td>
-                      <td align="center">
-                        dd/mm/yyyy <!--Biến-->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="2">
-                        Ngày trả lãi gần nhất
-                      </td>
-                      <td colspan="2" align="center">
-                        dd/mm/yyyy <!--Biến-->
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div>
-            <div class="col-md-6">
-                <table class="table table-bordered">
-                  <tbody>
-                    <tr>
-                      <td>
-                          Lãi suất
-                      </td>
-                      <td align="right">
-                          (3k/1 triệu) <!--Biến-->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                          Tiền Lãi đã đóng
-                      </td>
-                      <td align="right">
-                        0 VNĐ <!--Biến-->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <font color="red">Nợ cũ</font>
-                      </td>
-                      <td align="right">
-                        <font color="red">0 VNĐ</font> <!--Biến-->
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        Trạng thái
-                      </td>
-                      <td align="right">
-                        Đang cầm <!--Biến-->
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-            </div>
-        </div>
-        
     </div>
+  </div>
 </div>
