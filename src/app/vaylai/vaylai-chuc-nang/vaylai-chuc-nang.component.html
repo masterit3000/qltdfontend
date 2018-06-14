@@ -83,5 +83,104 @@
               </table>
           </div>
       </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-tabs card-header-primary">
+              <div class="nav-tabs-navigation">
+                <div class="nav-tabs-wrapper">
+                  <ul class="nav nav-tabs" data-tabs="tabs">
+                    <li class="nav-item">
+                      <a mat-button class="nav-link active" href="#dongLai" data-toggle="tab">
+                        Đóng lãi
+                        <div class="ripple-container"></div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a mat-button class="nav-link" href="#traBotGoc" data-toggle="tab">
+                        Trả bớt gốc
+                        <div class="ripple-container"></div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a mat-button class="nav-link" href="#vayThem" data-toggle="tab">
+                        Vay thêm
+                        <div class="ripple-container"></div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a mat-button class="nav-link" href="#giaHan" data-toggle="tab">
+                        Gia hạn
+                        <div class="ripple-container"></div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a mat-button class="nav-link" href="#dongHD" data-toggle="tab">
+                        Đóng HĐ
+                        <div class="ripple-container"></div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a mat-button class="nav-link" href="#no" data-toggle="tab">
+                        Nợ
+                        <div class="ripple-container"></div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a mat-button class="nav-link" href="#lichSu" data-toggle="tab">
+                        Lịch sử
+                        <div class="ripple-container"></div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a mat-button class="nav-link" href="#lichSuTraCham" data-toggle="tab">
+                        Lịch sử trả chậm
+                        <div class="ripple-container"></div>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a mat-button class="nav-link" href="#henGio" data-toggle="tab">
+                        Hẹn giờ
+                        <div class="ripple-container"></div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <div class="tab-content">
+                <div class="tab-pane active" id="dongLai">
+                  <app-vaylai-dong-lai></app-vaylai-dong-lai>
+                </div>
+                <div class="tab-pane" id="traBotGoc">
+                  <app-vaylai-tra-bot-goc></app-vaylai-tra-bot-goc>
+                </div>
+                <div class="tab-pane" id="vayThem">
+                  <app-vaylai-vay-them></app-vaylai-vay-them>
+                </div>
+                <div class="tab-pane" id="giaHan">
+                  <app-vaylai-gia-han></app-vaylai-gia-han>
+                </div>
+                <div class="tab-pane" id="dongHD">
+                  <app-vaylai-dong-hd></app-vaylai-dong-hd>
+                </div>
+                <div class="tab-pane" id="no">
+                  <app-vaylai-no></app-vaylai-no>
+                </div>
+                <div class="tab-pane" id="lichSu">
+                  <app-vaylai-lich-su></app-vaylai-lich-su>
+                </div>
+                <div class="tab-pane" id="lichSuTraCham">
+                  <app-vaylai-lich-su-tra-cham></app-vaylai-lich-su-tra-cham>
+                </div>
+                <div class="tab-pane" id="henGio">
+                  <app-vaylai-hen-gio></app-vaylai-hen-gio>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
