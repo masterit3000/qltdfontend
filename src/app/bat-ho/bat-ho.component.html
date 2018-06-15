@@ -1,222 +1,224 @@
 <div class="main-content">
-  <div class="container-fluid">
-      <!-- title -->
-      <div class="card-body">
-          <div class="row">
-              <div class="col-md-2">
-                  <label>QUỸ TIỀN MẶT</label><br />
-                  <span>0</span> <!--Biến-->
-              </div>
-              <div class="col-md-2">
-                  <label>TIỀN ĐANG CẦM</label><br />
-                  <span>0</span> <!--Biến-->
-              </div>
-              <div class="col-md-4">
-                  <label>TIỀN NỢ</label><br />
-                  <span>0</span> <!--Biến-->
-              </div>
-              <div class="col-md-2">
-                  <label>LÃI DỰ KIẾN</label><br />
-                  <span>0</span> <!--Biến-->
-              </div>
-              <div class="col-md-2">
-                  <label>LÃI ĐÃ THU</label><br />
-                  <span>0</span> <!--Biến-->
-              </div>
-          </div>
-      <div class="row">
-          <div class="col-md-8">
-          <h3>Hợp đồng vay lãi</h3>
-          </div>
-      </div>
-      <!--  -->
-      <div class="form-vertical">
-      <div class="form-group">
-          <!-- search -->
-          <div class="row">
-          <div class="col-md-1">
-              <label class="control-label">Mã HĐ</label>
-              <input type="text"  name="txtMaHD" class="form-control">
-          </div>
-          <div class="col-md-2">
-              <label class="control-label">Tên khách hàng</label>
-              <input type="text"  name="txtTenKH" class="form-control">
-          </div>
-          <div class="col-md-2">
-              <label class="control-label">Từ ngày</label>
-              <input type="date" name="dateNgayVay" class="form-control">    
-          </div>
-          <div class="col-md-2">
-              <label class="control-label">Đến ngày</label>
-              <input type="date" name="dateNgayVay" class="form-control">    
-          </div>
-          <div class="col-md-2">
-              <label class="control-label">Thời gian vay</label>
-              <select class="custom-select mr-sm-2" >
-                  <option selected>Tất cả</option>
-                  <option value="11">40 ngày</option>
-                  <option value="12">50 ngày</option>
-                  <option value="13">60 ngày</option>                                
-                  <option value="14">100 ngày</option>                                  
-              </select>
-          </div>
-          <div class="col-md-2">
-              <label class="control-label">Trạng thái hợp đồng</label>
-              <select class="custom-select mr-sm-2" >
-                  <option selected>Tất cả hợp đồng đang vay</option>
-                  <option value="11">Hợp đồng đúng hẹn</option>
-                  <option value="12">Hợp đồng chậm họ</option>
-                  <option value="13">Hợp đồng quá hạn</option>                                
-                  <option value="14">Hợp đồng nợ xấu</option>                  
-                  <option value="15">Hợp đồng đã kết thúc</option>                  
-                  <option value="16">Hợp đồng đã xóa</option>                  
-                  <option value="17">Ngày mai đóng họ</option>                  
-              </select>
-          </div>
-          <div class="col-md-1">
-              <br />
-              <button class="btn btn-info " style="margin-top: 0px" >Tìm kiếm</button>
-          </div>
-          </div>
-          <div class="row">
-              <div class="col-md-12">
-                  <button class="btn btn-success">Thêm mới</button> <!--Route tới camdoNew-->
-                  <button class="btn btn-success">Xuất excel</button>
-                  <span><b>Tổng hóa đơn: 1</b></span> <!--Biến-->
-              </div>
-          </div>
-          <!-- kết quả  -->
-          <div class="form-group">
-              <table class="table  table-bordered ">
-                  <thead>
-                      <tr align="center">
-                          <th width="20px" align="center">
-                              #
-                          </th>
-                          <th>
-                              Mã HĐ
-                          </th>
-                          <th>
-                              Tên KH
-                          </th>
-                          <th>
-                              Tiền giao khách
-                          </th>    
-                          <th>
-                              Tỷ lệ
-                          </th>         
-                          <th>
-                              Thời gian
-                          </th>  
-                          <th>
-                              Tiền đã đóng
-                          </th>        
-                          <th>
-                              Nợ cũ
-                          </th>
-                          <th>
-                              Tiền 1 ngày
-                          </th>
-                          <th>
-                              Còn phải đóng
-                          </th>
-                          <th>
-                              Tình trạng
-                          </th>
-                          <th>
-                              Ngày phải đóng tiền
-                          </th>
-                          <th>
-                              &nbsp;
-                          </th>
-                      </tr>
-                  </thead>
-                  <tbody>
-                          <tr align="center">
-                              <td align="center">
-                                  1
-                              </td>
-                              <td >
-                              <!-- sau này dùng router -->
-                                  2
-                              </td>                             
-                              <td >
-                                  4
-                              </td>          
-                              <td >
-                                  5
-                              </td>         
-                              <td >
-                                  6
-                              </td> 
-                              <td >
-                                  7
-                              </td>
-                              <td>
-                                  8
-                              </td>
-                              <td>
-                                  8
-                              </td>
-                              <td>    
-                                  9
-                              </td>
-                              <td>    
-                                  10
-                              </td>
-                              <td>    
-                                  11
-                              </td>
-                              <td>    
-                                  12
-                              </td>
-                              <td>    
-                                  <button>1</button>
-                                  <button>2</button>
-                                  <button>3</button><br />
-                                  <button>4</button>
-                                  <button>5</button>
-                                  <button>6</button>
-                              </td>
-                          </tr>
-                          <tr>
-                              <td></td>
-                              <td></td>
-                              <td align="right">Tổng tiền</td>
-                              <td align="center">6</td>
-                              <td></td>
-                              <td></td>
-                              <td align="center">8</td>
-                              <td align="center">9</td>
-                              <td align="center">10</td>
-                              <td align="center">11</td>
-                              <td></td>
-                              <td></td>
-                              <td></td>
-                          </tr>
-                  </tbody>
-              </table>
-              <!-- nhảy trang -->
-              <div class="row">
-                  
-                  <div class="col-md-12">
-                      <div style="float: right;">
-                      <form class="inline">
-                          <button> ← Prev</button>
-                          <button>1</button>
-                          <button>Next →</button>
-
-                      </form>
-                      </div>
-                  </div> 
-                      
-          
-              </div>
-
-          </div>
-      </div>
-      </div>
-  
-  </div>
-   </div>
+    <div class="container-fluid">
+        <!-- title -->
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-2">
+                    <label>QUỸ TIỀN MẶT</label>
+                    <br />
+                    <span>0</span>
+                    <!--Biến-->
+                </div>
+                <div class="col-md-2">
+                    <label>TIỀN ĐANG CẦM</label>
+                    <br />
+                    <span>0</span>
+                    <!--Biến-->
+                </div>
+                <div class="col-md-4">
+                    <label>TIỀN NỢ</label>
+                    <br />
+                    <span>0</span>
+                    <!--Biến-->
+                </div>
+                <div class="col-md-2">
+                    <label>LÃI DỰ KIẾN</label>
+                    <br />
+                    <span>0</span>
+                    <!--Biến-->
+                </div>
+                <div class="col-md-2">
+                    <label>LÃI ĐÃ THU</label>
+                    <br />
+                    <span>0</span>
+                    <!--Biến-->
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Hợp đồng vay lãi</h3>
+                </div>
+            </div>
+            <!--  -->
+            <div class="form-vertical">
+                <div class="form-group">
+                    <!-- search -->
+                    <div class="row">
+                        <div class="col-md-1">
+                            <label class="control-label">Mã HĐ</label>
+                            <input type="text" name="txtMaHD" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <label class="control-label">Tên khách hàng</label>
+                            <input type="text" name="txtTenKH" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <label class="control-label">Từ ngày</label>
+                            <input type="date" name="dateNgayVay" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <label class="control-label">Đến ngày</label>
+                            <input type="date" name="dateNgayVay" class="form-control">
+                        </div>
+                        <div class="col-md-2">
+                            <label class="control-label">Thời gian vay</label>
+                            <select class="custom-select mr-sm-2">
+                                <option selected>Tất cả</option>
+                                <option value="11">40 ngày</option>
+                                <option value="12">50 ngày</option>
+                                <option value="13">60 ngày</option>
+                                <option value="14">100 ngày</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label class="control-label">Trạng thái hợp đồng</label>
+                            <select class="custom-select mr-sm-2">
+                                <option selected>Tất cả hợp đồng đang vay</option>
+                                <option value="11">Hợp đồng đúng hẹn</option>
+                                <option value="12">Hợp đồng chậm họ</option>
+                                <option value="13">Hợp đồng quá hạn</option>
+                                <option value="14">Hợp đồng nợ xấu</option>
+                                <option value="15">Hợp đồng đã kết thúc</option>
+                                <option value="16">Hợp đồng đã xóa</option>
+                                <option value="17">Ngày mai đóng họ</option>
+                            </select>
+                        </div>
+                        <div class="col-md-1">
+                            <br />
+                            <button class="btn btn-info " style="margin-top: 0px">Tìm kiếm</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button routerLinkActive="active" [routerLink]="['/batHoNew']" class="btn btn-success">Thêm mới</button>
+                            <!--Route tới camdoNew-->
+                            <button class="btn btn-success">Xuất excel</button>
+                            <span>
+                                <b>Tổng hóa đơn: 1</b>
+                            </span>
+                            <!--Biến-->
+                        </div>
+                    </div>
+                    <!-- kết quả  -->
+                    <div class="form-group">
+                        <table class="table table-bordered text-center">
+                            <thead>
+                                <tr align="center">
+                                    <th width="20px" align="center">
+                                        #
+                                    </th>
+                                    <th>
+                                        Mã HĐ
+                                    </th>
+                                    <th>
+                                        Tên KH
+                                    </th>
+                                    <th>
+                                        Tiền giao khách
+                                    </th>
+                                    <th>
+                                        Tỷ lệ
+                                    </th>
+                                    <th>
+                                        Thời gian
+                                    </th>
+                                    <th>
+                                        Tiền đã đóng
+                                    </th>
+                                    <th>
+                                        Nợ cũ
+                                    </th>
+                                    <th>
+                                        Tiền 1 ngày
+                                    </th>
+                                    <th>
+                                        Còn phải đóng
+                                    </th>
+                                    <th>
+                                        Tình trạng
+                                    </th>
+                                    <th>
+                                        Ngày phải đóng tiền
+                                    </th>
+                                    <th>
+                                        &nbsp;
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                    <td>
+                                        5
+                                    </td>
+                                    <td>
+                                        6
+                                    </td>
+                                    <td>
+                                        7
+                                    </td>
+                                    <td>
+                                        8
+                                    </td>
+                                    <td>
+                                        8
+                                    </td>
+                                    <td>
+                                        9
+                                    </td>
+                                    <td>
+                                        10
+                                    </td>
+                                    <td>
+                                        11
+                                    </td>
+                                    <td>
+                                        12
+                                    </td>
+                                    <td>
+                                        <button routerLinkActive="active" [routerLink]="['/batHoChucNang']">1</button>
+                                    </td>
+                                </tr>
+                                <tr class="bolder">
+                                    <td></td>
+                                    <td></td>
+                                    <td>Tổng tiền</td>
+                                    <td>6</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>8</td>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- nhảy trang -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div style="float: right;">
+                                    <form class="inline">
+                                        <button> ← Prev</button>
+                                        <button>1</button>
+                                        <button>Next →</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
